@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'ImageProcess' target in the 'ImageProcess' project
+//
+
+#import <Availability.h>
+#import "IPAppDelegate.h"
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#endif
+
+
+#define appDelegate (IPAppDelegate *)[[UIApplication sharedApplication] delegate]
+
+#define kFacebookAppID @"498666650185332"
+#define kUDFaceBookLoggedIn @"UDFaceBookLoggedIn"
